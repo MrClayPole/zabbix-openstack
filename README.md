@@ -1,6 +1,6 @@
 # Monitoring OpenStack with Zabbix
 
-This repository contains Zabbix resources for monitoring OpenStack environment.
+This repository contains Zabbix resources for monitoring OpenStack environment. It was forked from cloudowski/zabbix-openstack as this no longer works with Zabbix 5.x. I'm attempting to change this
 
 # Features
 The following features are currently available:
