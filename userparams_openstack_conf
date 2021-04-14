@@ -1,0 +1,12 @@
+#
+# Discovery Rule
+#
+
+## Openstack Keystone API discovery
+# "hypervisors_v3/endpoints_v3","$OS_AUTHURL","$OS_TENANT","$OS_USER","$OS_PASSWORD","$OS_USER_DOMAIN_NAME","$OS_PROJECT_DOMAIN_NAME"
+
+# Default keystone query script
+UserParameter=openstack.discovery[*], /etc/zabbix/scripts/openstack/openstack-discover $1 $2 $3 $4 $5 $6 $7
+
+# Openstack ansible wrapper that ensures the correct keystone python environment is set before calling the above script
+#UserParameter=openstack.discovery[*], /etc/zabbix/scripts/openstack/osa_keystone_wapper.sh $1 $2 $3 $4 $5 $6 $7
