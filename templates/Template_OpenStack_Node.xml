@@ -1423,7 +1423,18 @@
                     <publickey/>
                     <privatekey/>
                     <port/>
-                    <filter>{#FSTYPE}:@File systems for discovery</filter>
+                    <filter>
+                        <evaltype>0</evaltype>
+                        <formula/>
+                        <conditions>
+                            <condition>
+                                <macro>{#IFNAME}</macro>
+                                <value>@Network interfaces for discovery</value>
+                                <operator>8</operator>
+                                <formulaid>A</formulaid>
+                            </condition>
+                        </conditions>
+                    </filter>
                     <lifetime>30</lifetime>
                     <description>Discovery of file systems of different types as defined in global regular expression &quot;File systems for discovery&quot;.</description>
                     <item_prototypes>
@@ -1736,7 +1747,18 @@
                     <publickey/>
                     <privatekey/>
                     <port/>
-                    <filter>{#IFNAME}:@Network interfaces for discovery</filter>
+                    <filter>
+                        <evaltype>0</evaltype>
+                        <formula/>
+                        <conditions>
+                            <condition>
+                                <macro>{#IFNAME}</macro>
+                                <value>@Network interfaces for discovery</value>
+                                <operator>8</operator>
+                                <formulaid>A</formulaid>
+                            </condition>
+                        </conditions>
+                    </filter>
                     <lifetime>30</lifetime>
                     <description>Discovery of network interfaces as defined in global regular expression &quot;Network interfaces for discovery&quot;.</description>
                     <item_prototypes>
